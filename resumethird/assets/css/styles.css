@@ -1,0 +1,99 @@
+body {
+	background:url(images/bricks.png);
+}
+.container {
+	margin:0 auto;
+	width:88%;
+	max-width:960px;
+	background:rgba(255,255,255,0.4);
+	padding:2em;
+}
+h1 {
+	font-family:'Lobster',cursive;
+	float:right;
+	font-size:75px;
+}
+h2 {
+	color:#212121;
+}
+h3 {
+	color:#ea55bb;
+}
+p {
+	text-align:left;
+	color:#3f3f3f;
+}
+.centerbox, .third {
+	font-family: 'Open Sans', sans-serif;
+	display:inline-block;
+}
+.profile, .skills {
+	display:block;
+	float:right;
+	font-family: 'Open Sans', sans-serif;
+}
+.contact {
+	float:right;
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+	list-style:none;
+	margin-top:-1.5em;
+	margin-bottom:2em;
+}
+.contact li {
+	display:inline;
+}
+.position1 {
+		list-style:none;
+		color:#ea55bb;
+		font-weight:bold;
+		margin-left:-2.5em;
+}
+.position2 {
+		list-style:none;
+		color:#55a6ea;
+		font-weight:bold;
+		margin-left:-2.5em;
+		font-family: 'Open Sans', sans-serif;
+}
+footer {
+	font-family: 'Open Sans', sans-serif;
+	display:block;
+}
+
+/*Media Queries--------*/
+
+@media screen and (min-width:700px) {
+	.contact {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:flex-end;
+		align-items:baseline;
+	}
+	.contact li {
+		padding:0 0.5em;
+	}
+	.centerbox {
+		display:inline-flex;
+		justify-content:space-between;	
+	}
+	.experience, .education{
+		display:flex;
+		flex-direction:column;
+	}
+	.box1, .box2 {
+		display:flex;
+		flex-direction:row;
+	}
+} /*Need this bracket!---*/
+
+/* Misc.
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
