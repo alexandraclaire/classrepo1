@@ -1,0 +1,210 @@
+body {
+	background:url(../images/brushed.png);
+}
+footer {
+	font-family: 'Open Sans', sans-serif;
+	background:rgb(220,220,220);
+	max-width:960px;
+	width:88%;
+	margin:0 auto;
+	padding:1em 2em;
+}
+.container {
+	margin:0 auto;
+	margin-top:-1em;
+	width:88%;
+	max-width:960px;
+	background:rgba(255,255,255,0.4);
+	padding:3em 2em;
+	font-family: 'Open Sans', sans-serif;
+	box-shadow:0px 0px 3px 3px #dcdcdc;
+}
+h1 {
+	font-family:'Lobster',cursive;
+	float:right;
+	font-size:75px;
+	text-shadow:0 2px grey;
+}
+h2 {
+	color:#212121;
+}
+h3 {
+	color:#d53a99;
+}
+p {
+	text-align:left;
+	color:#3f3f3f;
+	line-height:25px;
+}
+.profile, .skills {
+	display:inline-block;
+	font-family: 'Open Sans', sans-serif;
+	padding:3em 0;
+}
+.contact {
+	float:right;
+	font-size:18px;
+	font-family: 'Open Sans', sans-serif;
+	list-style:none;
+	margin-top:-1.5em;
+	margin-bottom:2em;
+	margin-left:-3em;
+}
+.position {
+	list-style:none;
+	font-weight:bold;
+}
+.position li {
+	margin-left:-40px;
+}
+#position1, #position2, #position3, #position4 {
+	color:#d53a99;
+}
+.centerbox, .third {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+}
+.heading2 {
+	order:2;
+}
+.item3, .item4 {
+	order:3;
+}
+a {
+	color:black;
+	text-decoration:none;
+
+}
+/*Social Media-----*/
+.social-media li {
+	float:right;
+	list-style:none;
+	display:block;
+	padding:3px;
+}
+.social-media li a {
+	display:block;
+}
+.behance a {
+	background:url(../images/sprite.png);
+	width:30px;
+	height:30px;
+	background-position:0px 0px;
+}
+.behance a:hover {
+	background:url(../images/sprite.png);
+	width:30px;
+	height:30px;
+	background-position:0px 30px;
+}
+.github a {
+	background:url(../images/sprite.png);
+	width:30px;
+	height:30px;
+	background-position:-30px 0px;	
+}
+.github a:hover {
+	background:url(../images/sprite.png);
+	width:30px;
+	height:30px;
+	background-position:-30px 30px;
+}
+.linkedin a {
+	background:url(../images/sprite.png);
+	width:30px;
+	height:30px;
+	background-position:-60px 0px;
+}
+.linkedin a:hover {
+	background:url(../images/sprite.png);
+	width:30px;
+	height:30px;
+	background-position:-60px 30px;
+}
+/*Media Queries--------*/
+
+@media screen and (min-width:700px) {
+	.contact {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:flex-end;
+		align-items:baseline;
+	}
+	.contact li {
+		padding:0 0.5em;
+	}
+	.centerbox {
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	.heading1, .item1 {
+		width:45%;
+		display:inline-flex;
+		justify-content:space-between;
+		order:1;
+	}
+	.heading2 {
+		width:35%;
+		display:inline-flex;
+		justify-content:space-between;
+		order:1;
+	}
+	.heading2 h2 {
+		margin-left:-2em;
+	}
+	.item1 {
+		border-right:5px solid #212121;
+		padding-right:4em;
+	}
+	.item2 {
+		width:45%;
+		order:3;
+		display:inline-flex;
+		justify-content:space-between;
+		border-right:5px solid #212121;
+		padding-right:4em;
+	}
+	.item3 {
+		width:45%;
+		order:2;
+		display:inline-flex;
+		justify-content:space-between;
+	}
+	.item4 {
+		width:45%;
+		order:4;
+		display:inline-flex;
+		justify-content:space-between;
+	}
+	#position1, #position2 {
+		width:30%;
+	}
+	#position3, #position4 {
+		width:30%;
+		margin-left:3em;
+	}
+	#info1, #info2 {
+		width:40%;
+	}
+	#info3, #info4 {
+		width:50%;
+	}
+	#info1 p, #info2 p{
+		margin-left:-4em;
+	}
+	.references {
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	.reference1, .reference2, .reference3 {
+		width:30%;
+
+} /*Need this bracket!---*/
+
+@media screen and (min-width:800px) {
+	.reference2 {
+		padding:0 20%;
+	}
+}/*Need this bracket!---*/
