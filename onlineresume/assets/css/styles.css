@@ -35,7 +35,8 @@ h1 {
 h2 {
 	color:#212121;
 	background:#c8aea2;
-	padding:5px 250px 5px 5px;
+	padding:5px 5px 5px 5px;
+	width:100%;
 }
 h3 {
 	color:#846451;;
