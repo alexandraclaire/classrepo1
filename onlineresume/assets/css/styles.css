@@ -1,5 +1,6 @@
 body {
 	background:url(../images/brushed.png);
+	line-height:25px;
 }
 footer {
 	font-family: 'Open Sans', sans-serif;
@@ -18,23 +19,30 @@ footer {
 	padding:3em 2em;
 	font-family: 'Open Sans', sans-serif;
 	box-shadow:0px 0px 3px 3px #dcdcdc;
+	font-size:16px;
+}
+header {
+	background-color:#846451;
 }
 h1 {
-	font-family:'Lobster',cursive;
+	font-family: 'Lobster', cursive;
 	float:right;
-	font-size:75px;
-	text-shadow:0 2px grey;
+	font-size:70px;
+	text-shadow:0 1px grey;
+	text-align:right;
+	line-height:75px;
 }
 h2 {
 	color:#212121;
+	background:#c8aea2;
+	padding:5px 250px 5px 5px;
 }
 h3 {
-	color:#d53a99;
+	color:#846451;;
 }
 p {
 	text-align:left;
 	color:#3f3f3f;
-	line-height:25px;
 }
 .profile, .skills {
 	display:inline-block;
@@ -43,7 +51,7 @@ p {
 }
 .contact {
 	float:right;
-	font-size:18px;
+	font-size:12px;
 	font-family: 'Open Sans', sans-serif;
 	list-style:none;
 	margin-top:-1.5em;
@@ -58,7 +66,7 @@ p {
 	margin-left:-40px;
 }
 #position1, #position2, #position3, #position4 {
-	color:#d53a99;
+	color:#846451;
 }
 .centerbox, .third {
 	display:flex;
@@ -74,7 +82,83 @@ p {
 a {
 	color:black;
 	text-decoration:none;
-
+}
+a:hover {
+	background:#add8e6;
+	border-radius:0.5em;
+}
+.skills ul {
+	list-style:none;
+	display:block;
+	margin-left:-2em;
+}
+header img {	
+	margin-top:60px;
+	margin-left:30px;
+	width:250px;
+	height:250px;
+	float:left;
+	display:inline;
+	border-radius:50em;
+	box-shadow:2px 3px grey;
+}
+.skills li {
+	float:left;
+	list-style:none;
+	margin: 3em 4em;
+	position:relative;
+}
+.skills span {
+	position:absolute;
+	bottom:-50px;
+	width:100%;
+	text-align:center;
+}
+.cisco span {
+	position:absolute;
+	bottom:-70px;
+}
+.html5 {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:0px 0px;
+}
+.css3 {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:-80px 0px;
+}
+.photoshop {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:-160px 0px;
+}
+.illustrator {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:-240px 0px;
+}
+.office {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:-320px 0px;
+}
+.cisco {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:-400px 0px;
+}
+.time {
+	background:url(../images/graphsprite.png);
+	width:80px;
+	height:80px;
+	background-position:-480px 0px;
 }
 /*Social Media-----*/
 .social-media li {
@@ -85,6 +169,7 @@ a {
 }
 .social-media li a {
 	display:block;
+	margin-top:-2.5em;
 }
 .behance a {
 	background:url(../images/sprite.png);
@@ -125,11 +210,19 @@ a {
 /*Media Queries--------*/
 
 @media screen and (min-width:700px) {
+	h1 {
+		font-size:100px;
+		line-height:100px;
+		letter-spacing:5px;
+	}
 	.contact {
 		display:flex;
 		flex-wrap:wrap;
 		justify-content:flex-end;
 		align-items:baseline;
+		font-size:16px;
+		margin-top:-3em;
+		width:60%;
 	}
 	.contact li {
 		padding:0 0.5em;
@@ -153,39 +246,38 @@ a {
 	.heading2 h2 {
 		margin-left:-2em;
 	}
-	.item1 {
-		border-right:5px solid #212121;
-		padding-right:4em;
-	}
 	.item2 {
 		width:45%;
 		order:3;
 		display:inline-flex;
 		justify-content:space-between;
-		border-right:5px solid #212121;
-		padding-right:4em;
 	}
 	.item3 {
 		width:45%;
 		order:2;
 		display:inline-flex;
 		justify-content:space-between;
+		border-left:solid 2px lightgrey;
+		padding:0 1.5em;
 	}
 	.item4 {
 		width:45%;
 		order:4;
 		display:inline-flex;
 		justify-content:space-between;
+		border-left:solid 2px lightgrey;
+		padding:0 1.5em;
 	}
 	#position1, #position2 {
 		width:30%;
 	}
 	#position3, #position4 {
 		width:30%;
-		margin-left:3em;
+		margin-left:5em;
 	}
 	#info1, #info2 {
 		width:40%;
+		padding-right:2em;
 	}
 	#info3, #info4 {
 		width:50%;
@@ -200,7 +292,16 @@ a {
 	}
 	.reference1, .reference2, .reference3 {
 		width:30%;
-
+}
+img {
+	margin-top:60px;
+	margin-left:30px;
+	width:250px;
+	height:250px;
+	float:left;
+	display:inline;
+	border-radius:50em;
+}
 } /*Need this bracket!---*/
 
 @media screen and (min-width:800px) {

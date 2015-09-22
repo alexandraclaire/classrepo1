@@ -10,20 +10,22 @@
     color: black !important; /* 1 */
     text-shadow: none !important;
     background: transparent !important;
+    border:none !important;
 }
-
 /**
  * Use a print-friendly font and size.
  */
-
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 8pt;
-    line-height: 1.5;
     margin: 0.5cm;
     padding: 2em 5em;
 }
-
+.container {
+     -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none; 
+}
 /**
  * Visually separate header from body.
  */
@@ -35,9 +37,6 @@ header ul li {
     display:inline;
     margin-left:16px;
     margin-top:10px;
-}
-.position {
-    margin-left:-18px;
 }
 /**
  * Visually separate footer from body.
@@ -63,7 +62,9 @@ nav {
 a {
     text-decoration: none;
 }
-
+img {
+    display:none !important;
+}
 /**
  *  Show long-form for abbreviations in print.
  */
@@ -79,7 +80,7 @@ abbr[title] {
  */
 
 h1 {
-    font-size: 32pt;
+    font-size: 50pt;
     line-height: 40pt;
     font-weight: normal;
     margin: 16pt 0;
@@ -107,49 +108,18 @@ h3 {
 .references {
     margin-top:-2em;
 }
+.position li{
+    margin-left:-4.5em;
+}
 /**
  * Prevent widows (single final paragraph line on next page) and orphans (single
  * first paragraph line on previous page).
  */
 
 p {
-    orphans: 2;
+    orphans: ;
     widows: 2;
 }
-
-/**
- * Simple blockquote styling.
- *
- * 1. Avoid blockquotes breaking across mutiple pages.
- */
-
-blockquote {
-    font-size: 16pt;
-    border-left: 3pt solid black;
-    padding: 0 0 0 8pt;
-    page-break-inside: avoid; /* 1 */
-}
-
-/**
- * 1. Ensure images are maximum possible width.
- * 2. Avoid images breaking across mutiple pages.
- */
-
-img {
-    max-width: 100% !important; /* 1 */
-    page-break-inside: avoid; /* 2 */
-}
-
-/**
- * Image alignment
- *
- * Example HTML:
- *
- * <img class="align-left">
- * <img class="align-right">
- * <img class="align-center">
- */
-
 .align-left {
         float: left;
         margin: 1em 1em 1em 0;
