@@ -34,9 +34,14 @@ h1 {
 }
 h2 {
 	color:#212121;
+<<<<<<< HEAD
 	background:#c8aea2;
 	padding:5px 5px 5px 5px;
 	width:100%;
+=======
+	background:rgba(200,174,162,0.5);
+	padding:5px 200px 5px 10px;
+>>>>>>> master
 }
 h3 {
 	color:#846451;;
